@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="p5/p5.js"></script>
+    <script src="p5/addons/p5.sound.js"></script>
+    <script src="p5/addons/p5.dom.js"></script>
+    <script src="qwerty.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+    #wrapper{ 
+            width: 1263px;
+            height: 640px;
+            background-color:#73a9c2;
+            margin-top: 8px;
+    }
+    .base {
+            width: 395px;
+            height: 600px;
+            position: absolute;
+            background-color: #d3d3d3;
+            top: 25px;
+            left: 430px;
+            border-style: solid;
+            border-color:gray;
+    }
+
+    .titulo{
+            position: absolute;
+            width: 395px;
+            height: 60px;
+            text-align: center;
+            border-style: solid;
+            border-color: gray;
+            top: 25px;
+            left: 430px;
+            color: black;
+    }
+    
+    .octava{
+            position: absolute;
+            width: 395px;
+            height: 100px;
+            text-align: center;
+            border-style: solid;
+            border-color: gray;
+            top: 85px;
+            left: 430px;
+            color: black;
+           
+    }
+    #oct1{
+            position: absolute;
+            width: 131px;
+            height: 100px;
+            text-align: center;
+            border-style: solid;
+            border-color: gray;
+            top: -3px;
+            left: -3px;
+            color: black;
+            
+    }
+    
+    #oct2{
+            position: absolute;
+            width: 127px;
+            height: 100px;
+            text-align: center;
+            border-style: solid;
+            border-color: gray;
+            top: -3px;
+            left: 131px;
+            color: black;
+            text-align: center;
+            
+    }
+    #oct3{
+            position: absolute;
+            width: 131px;
+            height: 100px;
+            text-align: center;
+            border-style: solid;
+            border-color: gray;
+            top: -3px;
+            left: 261px;
+            color: black;
+            
+    }
+    .osc{
+            position: absolute;
+            width: 395px;
+            height: 440px;
+            border-style: solid;
+            border-color: gray;
+            top: 185px;
+            left: 430px;
+            color: black;
+    }
+    .car{
+            position: absolute;
+            width: 198px;
+            height: 440px;
+            border-style: solid;
+            border-color: gray;
+            top: -3px;
+            left: -3px;
+            color: black;
+            text-align: center;
+            
+    }
+    .mod{
+            position: absolute;
+            width: 197px;
+            height: 440px;
+            border-style: solid;
+            border-color: gray;
+            top: -3px;
+            left: 195px;
+            color: black;
+            text-align: center;
+            
+    }
+    .sliders{
+            position: absolute;
+            width: 198px;
+            height: 300px;
+            border-style: solid;
+            border-color: gray;
+            top: 137px;
+            left: -3px;
+            text-align: center;
+            
+    }
+    .raya{
+            position: absolute;
+            width: 196px;
+            height: 300px;
+            border-style: solid;
+            border-color: gray;
+            top: 137px;
+            left: 196px;
+            text-align: center;
+    }
+    .freq{
+            position: absolute;
+            width: 198px;
+            height: 150px;
+            border-style: solid;
+            border-color: gray;
+            top: -3px;
+            left: -3px;
+            color: black;
+            text-align: center;
+            
+
+    }
+    .depth{
+            position: absolute;
+            width: 198px;
+            height: 147px;
+            border-style: solid;
+            border-color: gray;
+            top: 150px;
+            left: -3px;
+            color: black;
+            text-align: center;
+      
+    }
+    .imagen{
+            position:absolute;
+            height: 200px;
+            left:0px;
+            top: 50px;
+    }
+    </style>
+
+<div id="wrapper">
+
+    <div class="base">
+    </div>
+    <div class="titulo">
+        <h2>SYNTHESIZER</h2>
+    </div>
+    <div class="octava">
+        <div id="oct1" class="tres"> <h2>-</h2> </div>
+        <div id="oct2" class="tres"> <br><h3>OCTAVE</h3> </div>
+        <div id="oct3" class="tres"> <h2>+</h2> </div>
+    </div>
+
+    <div class="osc">
+        <div class="car"> 
+            <br> <h3>MODULATOR</h3> 
+            <div class="sliders">
+                <div class="freq"> <br> <h4>FREQUENCY</h4> </div>
+                <div class="depth "><br> <h4>DEPTH</h4> </div>
+            </div>
+            <div class="raya"> <img src="cat.png" class="imagen"> </div>
+        </div>
+        <div class="mod"> <br> <h3>CARRIER</h3> </div>
+    </div>
+</div>
+    
+    
+</body>
+</html>
